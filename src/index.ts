@@ -2,9 +2,9 @@ import { Tweet } from "./models/Tweet";
 import { User } from "./models/User";
 
 
-const djonatan = new User("Djonatan", "djonatanw", "dj@gmail.com", "dj123")
-const simone = new User("Simone", "syh", "syh@gmail.com", "syh123")
-const andre = new User("André", "andre", "andre@gmail.com", "andre123")
+const djonatan = new User("Djonatan", "djonatanw", "dj@gmail.com", "Dj123456789")
+const simone = new User("Simone", "syh", "syh@gmail.com", "Syh123456789")
+const andre = new User("André", "andre", "andre@gmail.com", "Andre123456789")
 
 djonatan.createUsers(djonatan)
 simone.createUsers(simone)
@@ -29,8 +29,8 @@ tweet2.like(andre)
 tweet1.like(simone)
 tweet4.like(simone)
 
-tweet1.reply("First reply to Leo's tweet", djonatan)
-tweet1.reply("second reply to leo's tweet", andre)
+tweet1.reply("First reply to Djonatan's tweet", djonatan)
+tweet1.reply("second reply to andre's tweet", andre)
 
 
 simone.showFeed()
